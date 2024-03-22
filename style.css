@@ -87,7 +87,7 @@ input {
 }
 
 input:focus {
-    border: 1px solid blue;
+    border: 1px solid #8c00ff;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -140,9 +140,6 @@ input:focus {
 }
 .login:link {
     color: #a200ff;
-}
-.login:visited {
-    color: green;
 }
 .login:hover {
     color: blue;
