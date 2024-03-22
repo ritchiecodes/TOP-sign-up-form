@@ -16,23 +16,44 @@
             </div>
         </div>
         <div id="right-content">
-            <p class="welcome">Welcome to Minigram! Join a community of miniature builders, painters and gamers. Showcase your latest projects, connect with others and find the inspiration you need to paint your pile of shame.</p>
+            <p class="welcome">Welcome to Minigram!<br>Join a community of miniature builders, painters and gamers.<br>Showcase your latest projects, connect with others and find the inspiration you need to paint your pile of shame.</p>
+            <p class="welcome-signup">Sign up <em>now</em> to get started.</p>
             <div class="sign-up-box">
-                <p class="create-account"></p>
-                <form action="https://httpbin.org/post" method="post">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
-                    <label for="user_email">EMAIL ADDRESS</label>
-                    <input type="email" id="user_email" name="user_email">
-                    <label for="user_phone">PHONE NUMBER</label>
-                    <input type="tel" id="user_phone" name="user_phone">
-                    <label for="user_password">PASSWORD</label>
-                    <input type="password" id="user_password" name="user_password">
+                <p class="create-account">Let's Do It!</p>
+                <form action="https://httpbin.org/post" method="post" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" size="32" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" size="32" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user_email">EMAIL ADDRESS</label>
+                            <input type="email" id="user_email" name="user_email" size="32" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_phone">PHONE NUMBER</label>
+                            <input type="tel" id="user_phone" name="user_phone" size="32" pattern="04\d{8}" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" id="user_password" name="user_password" size="32" minlength="8" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_reenter">CONFIRM PASSWORD</label>
+                            <input type="password" id="user_reenter" name="user_reenter" size="32" minlength="8" required>
+                        </div>
+                    </div>
                     <button type="submit">Create Account</button>
                 </form>
-                <p class="login">ALready have an account? Log in</p>
+                <p class="login">Already have an account? Log in</p>
             </div>
         </div>
     </div>
